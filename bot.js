@@ -3,7 +3,7 @@ window.onload = (function(){
 	var urlArray = url.split("/");
 	var len = urlArray.length;
 	var id = parseInt((urlArray[len-1]).replace("#",""));
-	var nextURL = "http://qiibee.com/app/feed/"+(id-1).toString()+"#";
+	var nextURL = "https://qiibee.com/app/feed/"+(id-1).toString()+"#";
 	var selector = "a.post-like-btn";
 	setTimeout(function(){
 		//CLICK
