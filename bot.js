@@ -1,6 +1,6 @@
 window.onload = (function(){
 	var url = window.location.href;
-	var urlArray = url.split("/")
+	var urlArray = url.split("/");
 	var len = urlArray.length;
 	var id = parseInt((urlArray[len-1]).replace("#",""));
 	var nextURL = "http://qiibee.com/app/feed/"+(id-1).toString()+"#";
@@ -15,7 +15,7 @@ window.onload = (function(){
 		function checkForExists(){
 			var ex = $(selector).length != 0;
 			if(ex)like();
-			else setTimeout(checkForExists, 700)
+			else setTimeout(checkForExists, 700);
 		}
 		checkForExists();
 	},3000);
