@@ -10,7 +10,7 @@ window.onload = (function(){
 		function like(){
 			var a = $(selector);
 			a[0].click();
-			setTimeout(function(){window.location=nextURL;},1000);
+			setTimeout(function(){window.location=nextURL;},3000);
 		}
 		function checkForExists(){
 			var ex = $(selector).length != 0;
@@ -18,5 +18,5 @@ window.onload = (function(){
 			else setTimeout(checkForExists, 700);
 		}
 		checkForExists();
-	},3000);
+	},8000);
 });
